@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Hatipara school</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="company_name">The Oak Troop</string>
+    <!--<string name="about_developer">আপনার প্রয়োজনীয় ও মানসম্পন্ন Android App ডেভেলপ করতে আমরা বদ্ধ পরিকর। ব্যক্তিগত বা প্রতিষ্ঠানের এপ্লিকেশন তৈরি করতে যোগাযোগ করুন।</string>-->
+    <string name="facebook_oak_team">ফেসবুকে The Oak Troop</string>
+    <string name="facebook_note">Me on Facebook</string>
+    <string name="mail_note">Mail me</string>
+    <string name="developer_head_line">We try our best</string>
+    <string name="designation">Developer</string>
+
+    <string name="title_team_server">"http://www.oaktroop.com"</string>
+    <string name="title_team_fb">"http://www.facebook.com/TheOakTeam"</string>
+    <string name="title_hasan_fb">"http://www.facebook.com/hasan.cse91"</string>
+    <string name="title_sunny_fb">"http://www.facebook.com/mahadihasansunny1"</string>
+    <string name="title_chisty_fb">"http://www.facebook.com/mainuddin.chisty1"</string>
+    <string name="title_saimum_fb">"http://www.facebook.com/shakirahmedsaimum"</string>
+
+    <string name="mobile_team">"01521208079"</string>
+    <string name="mail_hasan">"hasan_cse91@yahoo.com"</string>
+    <string name="mail_sunny">"sunny_mhs@hotmail.com"</string>
+    <string name="mail_chisty">"chistyinfo@gmail.com"</string>
+    <string name="title_activity_feedback">Feedback</string>
+
+</resources>
