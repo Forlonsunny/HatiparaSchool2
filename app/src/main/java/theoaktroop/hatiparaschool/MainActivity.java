@@ -1,13 +1,14 @@
 package theoaktroop.hatiparaschool;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-public class MainActivity extends AppCompatActivity {
+
+public class MainActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void btOnclick(View view)
     {
-      startActivity(new Intent(MainActivity.this,WebActivity.class));
+      startActivity(new Intent(MainActivity.this, WebActivity.class));
     }
 
     @Override
@@ -35,8 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_Feedback) {
-
-            return true;
+            startActivity(new Intent(MainActivity.this,FeedbackActivity.class));
         }
         if (id==R.id.action_aboutdev){
             startActivity(new Intent(MainActivity.this,AboutActivity.class));
@@ -44,4 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }

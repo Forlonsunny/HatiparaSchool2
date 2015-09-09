@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hatipara school</string>
+    <string name="app_name">Hati Para M. L. High School</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -11,6 +11,7 @@
     <string name="mail_note">Mail me</string>
     <string name="developer_head_line">We try our best</string>
     <string name="designation">Developer</string>
+    <string name="welcome_note">হাটীপাড়া বহুমুখী উচ্চ বিদ্যালয়ের Android App এ আপনাকে স্বাগতম।\nএই এপের সাহায্যে আপনি উক্ত বিদ্যালয়ের ওয়েবসাইটের সকল তথ্য দেখতে পারবেন। ফিডব্যাক অপশনের মাধ্যমে এপ্লিকেশন সম্পর্কে আপনার মতামত বা পরামর্শও জানাতে পারেন।\nওয়েবসাইটটি ডিজাইন ও ডেভেলপ করেছে Megaminds Web &amp; IT Solutions​ এবং Android App বানিয়েছে The Oak Troop.\nApp টি ব্যবহার করার জন্য ধন্যবাদ।</string>
 
     <string name="title_team_server">"http://www.oaktroop.com"</string>
     <string name="title_team_fb">"http://www.facebook.com/TheOakTeam"</string>
@@ -23,6 +24,6 @@
     <string name="mail_hasan">"hasan_cse91@yahoo.com"</string>
     <string name="mail_sunny">"sunny_mhs@hotmail.com"</string>
     <string name="mail_chisty">"chistyinfo@gmail.com"</string>
-    <string name="title_activity_feedback">Feedback</string>
+    <string name="title_activity_feedback">Give You Feedback</string>
 
 </resources>
