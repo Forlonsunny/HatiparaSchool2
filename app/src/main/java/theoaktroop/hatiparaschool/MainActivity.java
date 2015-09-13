@@ -6,6 +6,11 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.FrameLayout;
+
+import com.rzlts.appinbox.AppInbox;
+import com.rzlts.appinbox.model.Gender;
+import com.rzlts.appinbox.views.InboxView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,6 +19,12 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        AppInbox.startInbox(this, "fpH-8HZaxCYQX9dGIzIQ7_oxTlsGpmfAGvMLYBYrMgo", "880690582470", null, null, null, "The", "Oak Troops", "oaktroop2015@gmail.com", Gender.BOTH, 0);
+
+        FrameLayout rlLayout = ( FrameLayout) this.findViewById(R.id.rlLayout);
+        final InboxView inbox = new InboxView(this);
+        rlLayout.addView(inbox);
     }
     public void btOnclick(View view)
     {

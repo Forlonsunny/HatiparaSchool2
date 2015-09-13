@@ -26,14 +26,38 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/hatipara_logo"/>
 
-            <TextView
+            <LinearLayout
+               android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="হাটীপাড়া বহুমুখী উচ্চ বিদ্যালয়"
-                android:gravity="center"
-                android:textSize="18sp"
-                android:layout_marginTop="10dp"
-                android:textColor="#002366"/>
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/rlLayout"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="start"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="হাটীপাড়া বহুমুখী উচ্চ বিদ্যালয়"
+                    android:gravity="left"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#002366"/>
+
+            </LinearLayout>
+
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="হাটীপাড়া বহুমুখী উচ্চ বিদ্যালয়"-->
+                <!--android:gravity="center"-->
+                <!--android:textSize="18sp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:textColor="#002366"/>-->
 
            <TextView
                android:layout_width="wrap_content"
