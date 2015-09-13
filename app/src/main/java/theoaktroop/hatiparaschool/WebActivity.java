@@ -1,10 +1,10 @@
 package theoaktroop.hatiparaschool;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 //import android.support.design.widget.FloatingActionButton;
-import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 
 
-public class WebActivity extends AppCompatActivity {
+public class WebActivity extends Activity {
 
     private WebView webView;
     private TextView txtUnititle;

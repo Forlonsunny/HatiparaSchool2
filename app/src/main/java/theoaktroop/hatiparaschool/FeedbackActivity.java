@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,7 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 
-public class FeedbackActivity extends AppCompatActivity implements MyInterface {
+public class FeedbackActivity extends ActionBarActivity implements MyInterface {
 
     Button button;
     EditText name;
@@ -29,17 +29,15 @@ public class FeedbackActivity extends AppCompatActivity implements MyInterface {
     String emailString;
     String phoneString;
     String feedbackString;
-//    PostMethod postMethod = new PostMethod(this);
+    PostMethod postMethod = new PostMethod(this);
     private AlphaAnimation buttonClick = new AlphaAnimation(1F, 0.002F);
-    String strJson;
-    String data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_feedback);
         initialize();
-//        postMethod.myInterface = this;
+        postMethod.myInterface = this;
 
 
         button.setOnClickListener(new View.OnClickListener() {
@@ -54,7 +52,7 @@ public class FeedbackActivity extends AppCompatActivity implements MyInterface {
                     feedbackString = feedbackEditText.getText().toString();
 
                     if(!feedbackString.isEmpty()){
-//                        postMethod.execute(nameString,emailString,phoneString,feedbackString);
+                        postMethod.execute(nameString,emailString,phoneString,feedbackString);
                     }
                     else {
                         Toast.makeText(getApplicationContext(),"You must give feedback!", Toast.LENGTH_SHORT).show();
@@ -110,6 +108,14 @@ public class FeedbackActivity extends AppCompatActivity implements MyInterface {
         else{
             Toast.makeText(getApplicationContext(),"Something wrong! Please mail us from Developer page!", Toast.LENGTH_SHORT).show();
         }
+
+
+//        if(message!=null){
+//            Toast.makeText(getApplicationContext(),"Response is: "+message, Toast.LENGTH_SHORT).show();
+//        }
+//        else{
+//            Toast.makeText(getApplicationContext(),"Something wrong! Please mail us from Developer page!", Toast.LENGTH_SHORT).show();
+//        }
 
         finish();
     }
