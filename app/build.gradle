@@ -24,5 +24,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.0.0'
     compile 'com.google.android.gms:play-services:7.5.+'
     compile files('libs/rzlts-with-googleplayservices.jar')
+    compile 'com.google.android.gms:play-services:7.5.+'
     compile files('libs/gcm.jar')
 }

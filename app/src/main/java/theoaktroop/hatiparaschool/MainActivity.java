@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
 
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
 import com.rzlts.appinbox.AppInbox;
 import com.rzlts.appinbox.model.Gender;
 import com.rzlts.appinbox.views.InboxView;
@@ -20,11 +22,20 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        AdView mAdView = (AdView) this.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+
+
         AppInbox.startInbox(this, "fpH-8HZaxCYQX9dGIzIQ7_oxTlsGpmfAGvMLYBYrMgo", "880690582470", null, null, null, "The", "Oak Troops", "oaktroop2015@gmail.com", Gender.BOTH, 0);
 
         FrameLayout rlLayout = ( FrameLayout) this.findViewById(R.id.rlLayout);
         final InboxView inbox = new InboxView(this);
         rlLayout.addView(inbox);
+
+
+
     }
     public void btOnclick(View view)
     {
