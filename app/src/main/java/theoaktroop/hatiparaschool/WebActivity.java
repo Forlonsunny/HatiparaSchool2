@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-//import android.support.design.widget.FloatingActionButton;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +15,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//import android.support.design.widget.FloatingActionButton;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 
 public class WebActivity extends Activity {
@@ -31,15 +33,18 @@ public class WebActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
 
-//        AdView mAdView = (AdView) findViewById(R.id.adView1);
-//        AdRequest adRequest = new AdRequest.Builder().build();
-//        mAdView.loadAd(adRequest);
+
+
+
 //
 //        FloatingActionButton backButton = (FloatingActionButton) findViewById(R.id.backButton);
 //        FloatingActionButton forwardButton = (FloatingActionButton) findViewById(R.id.forwardButton);
 
 
         webView = (WebView) findViewById(R.id.webView);
+
+
+
 
 
 
@@ -56,6 +61,11 @@ public class WebActivity extends Activity {
             webView.getSettings().setJavaScriptEnabled(true);
             webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
             webView.loadUrl(url);
+
+        AdView mAdView = (AdView) this.findViewById(R.id.adView1);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
 
     }
