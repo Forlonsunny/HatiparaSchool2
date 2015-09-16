@@ -157,7 +157,7 @@ public class AboutActivity extends ActionBarActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_feedback, menu);
         return true;
     }
 
@@ -169,6 +169,9 @@ public class AboutActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+        if(id==R.id.action_Home){
+            finish();
+        }
         if (id == R.id.action_Feedback) {
             startActivity(new Intent(AboutActivity.this, FeedbackActivity.class));
         }

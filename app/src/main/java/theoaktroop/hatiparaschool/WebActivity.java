@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,7 +23,7 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 
 
-public class WebActivity extends ActionBarActivity {
+public class WebActivity extends Activity {
 
     private WebView webView;
     private TextView txtUnititle;
@@ -33,6 +35,7 @@ public class WebActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_web);
+
 
 
 
@@ -119,6 +122,23 @@ public class WebActivity extends ActionBarActivity {
 
             return true;
         }
+    }
+
+    public void menuAction(View view){
+        view.startAnimation(buttonClick);
+
+        if(view.getId()==R.id.homeButton){
+            finish();
+        }
+        else if(view.getId()==R.id.feedbackButton){
+            startActivity(new Intent(WebActivity.this, FeedbackActivity.class));
+        }
+        else if (view.getId()==R.id.developerButton){
+            startActivity(new Intent(WebActivity.this, AboutActivity.class));
+        }
+
+
+
     }
 
     public void backAction(View view){

@@ -10,11 +10,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:background="#4bdd52"
+        android:layout_height="40dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:background="#000000"
         android:orientation="horizontal"
         android:gravity="center"
-        android:weightSum="5"
+        android:weightSum="6"
         android:id="@+id/toolLayout">
 
         <ImageView
@@ -26,14 +28,7 @@
             android:clickable="true"
             android:onClick="backAction"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_weight="3"
-            android:layout_height="match_parent"
-            android:text="Website"
-            android:gravity="center"
-            android:textColor="#FFFF"
-            android:textSize="25sp"/>
+
 
         <ImageView
             android:layout_width="0dp"
@@ -42,6 +37,38 @@
             android:src="@drawable/forward"
             android:clickable="true"
             android:onClick="forwardAction"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/home"
+            android:clickable="true"
+            android:onClick="menuAction"
+            android:id="@+id/homeButton"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/feedback"
+            android:clickable="true"
+            android:onClick="menuAction"
+            android:id="@+id/feedbackButton"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@drawable/developer"
+            android:clickable="true"
+            android:onClick="menuAction"
+            android:id="@+id/developerButton"/>
 
     </LinearLayout>
 
