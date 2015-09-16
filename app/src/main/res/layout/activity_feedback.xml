@@ -7,32 +7,6 @@
     android:background="#e8e8e7"
     tools:context="aoktroop.bduniversity.activity.FeedbackActivity">
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="55dp"-->
-        <!--android:orientation="horizontal"-->
-        <!--android:background="#22b14c"-->
-        <!--android:weightSum="7"-->
-        <!--android:layout_gravity="center">-->
-
-        <!--<ImageView-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_weight="1"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:src="@drawable/back"-->
-            <!--android:clickable="true"-->
-            <!--android:onClick="backButtonAction"/>-->
-
-        <!--<TextView-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_weight="6"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:text="Give your Feedback   "-->
-            <!--android:textColor="#FFFF"-->
-            <!--android:textSize="22sp"-->
-            <!--android:gravity="center"/>-->
-
-    <!--</LinearLayout>-->
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,8 +19,6 @@
             android:padding="20dp"
             android:orientation="vertical"
             >
-
-
 
             <EditText
                 android:layout_width="match_parent"
@@ -119,21 +91,7 @@
         android:layout_gravity="bottom"
         android:id="@+id/adMainActivity"
         android:gravity="center">
-        <!--<com.google.android.gms.ads.AdView-->
-            <!--android:id="@+id/adView1"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerHorizontal="true"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--ads:adSize="BANNER"-->
-            <!--ads:adUnitId="@string/banner_ad_unit_id">-->
-        <!--</com.google.android.gms.ads.AdView>-->
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            >
 
             <com.google.android.gms.ads.AdView
                 android:id="@+id/adView"
@@ -147,7 +105,6 @@
             </com.google.android.gms.ads.AdView>
 
         </LinearLayout>
-    </LinearLayout>
 
 
 

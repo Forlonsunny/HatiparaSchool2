@@ -1,12 +1,16 @@
 package theoaktroop.hatiparaschool;
 
+import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.AdRequest;
@@ -39,7 +43,12 @@ public class MainActivity extends ActionBarActivity {
     }
     public void btOnclick(View view)
     {
-      startActivity(new Intent(MainActivity.this, WebActivity.class));
+        if(isNetworkAvailable()){
+            startActivity(new Intent(MainActivity.this, WebActivity.class));
+        }
+        else{
+        Toast.makeText(getApplicationContext(), "Please check your Internet connection", Toast.LENGTH_SHORT).show();
+        }
     }
 
     @Override
@@ -65,6 +74,13 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 
 

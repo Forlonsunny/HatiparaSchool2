@@ -28,35 +28,37 @@
         android:theme="@style/AppTheme" >
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WebActivity" />
-        <activity android:name=".AboutActivity" />
+
+        <activity android:name=".WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <activity android:name=".AboutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
         <activity
             android:name=".FeedbackActivity"
-            android:label="@string/title_activity_feedback" >
+            android:label="@string/title_activity_feedback"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+
         </activity>
         //..........rzlts.............................
         <activity
             android:name="com.rzlts.appinbox.InboxActivity"
             android:label="@string/app_name"
-            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
         <activity
             android:name="com.rzlts.appinbox.SettingActivity"
             android:label="@string/app_name"
-            android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
-        <activity android:name="com.rzlts.appinbox.NotificationActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            >
+        <activity android:name="com.rzlts.appinbox.NotificationActivity">
         </activity>
 
         <receiver
