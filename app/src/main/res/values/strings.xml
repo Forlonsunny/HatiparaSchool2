@@ -11,7 +11,7 @@
     <string name="mail_note">Mail me</string>
     <string name="developer_head_line">We try our best</string>
     <string name="designation">Developer</string>
-    <string name="welcome_note">হাটীপাড়া বহুমুখী উচ্চ বিদ্যালয়ের Android App এ আপনাকে স্বাগতম।\nএই এপের সাহায্যে আপনি উক্ত বিদ্যালয়ের ওয়েবসাইটের সকল তথ্য দেখতে পারবেন। ফিডব্যাক অপশনের মাধ্যমে এপ্লিকেশন সম্পর্কে আপনার মতামত বা পরামর্শও জানাতে পারেন।\nওয়েবসাইটটি ডিজাইন ও ডেভেলপ করেছে Megaminds Web &amp; IT Solutions​ এবং Android App বানিয়েছে The Oak Troop.\nApp টি ব্যবহার করার জন্য ধন্যবাদ।</string>
+    <string name="welcome_note">হাটীপাড়া বহুমুখী উচ্চ বিদ্যালয়ের Android App এ আপনাকে স্বাগতম।\nএই এপের সাহায্যে আপনি উক্ত বিদ্যালয়ের ওয়েবসাইটের সকল তথ্য দেখতে পারবেন। ফিডব্যাক অপশনের মাধ্যমে এপ্লিকেশন সম্পর্কে আপনার মতামত বা পরামর্শও জানাতে পারেন।\n\nApp টি ব্যবহার করার জন্য আপনাকে ধন্যবাদ।</string>
 
     <string name="title_team_server">"http://www.oaktroop.com"</string>
     <string name="title_team_fb">"http://www.facebook.com/TheOakTeam"</string>

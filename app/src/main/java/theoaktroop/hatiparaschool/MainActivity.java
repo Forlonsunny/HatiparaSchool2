@@ -32,7 +32,7 @@ public class MainActivity extends ActionBarActivity {
 
 
 
-        AppInbox.startInbox(this, "fpH-8HZaxCYQX9dGIzIQ7_oxTlsGpmfAGvMLYBYrMgo", "880690582470", null, null, null, "The", "Oak Troops", "oaktroop2015@gmail.com", Gender.BOTH, 0);
+        AppInbox.startInbox(this, "eOhxRprN7O6nGUydIBe5eMEZQDIpIcEXNVQJ2MlB2qY", "880690582470", null, null, null, "The", "Oak Troops", "oaktroop2015@gmail.com", Gender.BOTH, 0);
 
         FrameLayout rlLayout = ( FrameLayout) this.findViewById(R.id.rlLayout);
         final InboxView inbox = new InboxView(this);
