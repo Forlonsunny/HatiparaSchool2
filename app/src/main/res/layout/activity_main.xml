@@ -30,12 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <FrameLayout
-                    android:id="@+id/rlLayout"
-                    android:layout_marginTop="10dp"
-                    android:layout_gravity="start"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"/>
+
 
                 <TextView
                     android:layout_width="match_parent"
@@ -73,6 +68,17 @@
                 android:onClick="btOnclick"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <FrameLayout
+                android:id="@+id/rlLayout"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
 
